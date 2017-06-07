@@ -1,0 +1,175 @@
+{% extends "layout_user.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+<div class="row">
+        <div class="span6">
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Algemene informatie</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="widget big-stats-container">
+                <div class="widget-content">
+                  <h6 class="bigstats">Applicatie die genen en anthocyanen met stressomstandigheden koppeld.</h6>
+                  <div id="big_stats" class="cf">
+                    <div class="stat"> <i class="icon-th-list"></i> <span class="value">851<br><font size="2">Orthologen</font></span> </div>
+                    <!-- .stat -->
+
+                    <div class="stat"> <i class="icon-search"></i> <span class="value">423<br><font size="2">Orthologen</font></span> </div>
+                    <!-- .stat -->
+
+                    <div class="stat"> <i class="icon-envelope"></i> <span class="value">922<br><font size="2">Orthologen</font></span> </div>
+                    <!-- .stat -->
+
+                    <div class="stat"> <i class="icon-heart"></i> <span class="value">25%<br><font size="2">Orthologen</font></span> </div>
+                    <!-- .stat -->
+                  </div>
+                </div>
+                <!-- /widget-content -->
+
+              </div>
+            </div>
+          </div>
+          <!-- /widget -->
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-file"></i>
+              <h3> Content</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="messages_layout">
+                <li class="from_user left">
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name">Applicatiebeheerder</a> <span class="time">24 lichtjaren geleden</span>
+                    </div>
+                    <div class="text"> As an interesting side note, as a head without a body, I envy the dead. There's one way and only one way to determine if an animal is intelligent. Dissect its brain! Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor. </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <!-- /widget-content -->
+          </div>
+          <!-- /widget -->
+        </div>
+        <!-- /span6 -->
+        <div class="span6">
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-bookmark"></i>
+              <h3>Important Shortcuts</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="shortcuts"> <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span
+                                        class="shortcut-label">StringDB</span> </a><a href="javascript:;" class="shortcut"><i
+                                            class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">NCBI</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Uniprot</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">KEGG</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-user"></i><span
+                                                class="shortcut-label">ProSite</span> </a><a href="javascript:;" class="shortcut"><i
+                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">Swissprot</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">Pride</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">RCSB PDB</span> </a> </div>
+              <!-- /shortcuts -->
+            </div>
+            <!-- /widget-content -->
+          </div>
+          <!-- /widget -->
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-signal"></i>
+              <h3> Area Chart Example</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <canvas id="area-chart" class="chart-holder" height="250" width="538"> </canvas>
+              <!-- /area-chart -->
+            </div>
+            <!-- /widget-content -->
+          </div>
+          <!-- /widget -->
+
+
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Recent News</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="news-items">
+                <li>
+
+                  <div class="news-item-date"> <span class="news-item-day">5</span> <span class="news-item-month">Aug</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">Added a functionality</a>
+                    <p class="news-item-preview">Added a working Graph</p>
+                  </div>
+
+                </li>
+                <li>
+
+                  <div class="news-item-date"> <span class="news-item-day">1</span> <span class="news-item-month">Jun</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">Added a functionality</a>
+                    <p class="news-item-preview"> Added a functional Sunburst</p>
+                  </div>
+
+                </li>
+                <li>
+
+                  <div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">May</span> </div>
+                  <div class="news-item-detail"> <a href="" class="news-item-title" target="_blank">Added a functionality</a>
+                    <p class="news-item-preview"> Launched the webapp!</p>
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+            <!-- /widget-content -->
+          </div>
+          <!-- /widget -->
+        </div>
+        <!-- /span6 -->
+      </div>
+      <!-- /row -->
+{% endblock %}
+{% block extrajs %}
+<script>
+
+        var lineChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    fillColor: "rgba(220,220,220,0.5)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#fff",
+                    data: [65, 59, 90, 81, 56, 55, 40]
+                },
+                {
+                    fillColor: "rgba(151,187,205,0.5)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    pointColor: "rgba(151,187,205,1)",
+                    pointStrokeColor: "#fff",
+                    data: [28, 48, 40, 19, 96, 27, 100]
+                }
+            ]
+
+        }
+
+        var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
+
+
+        var barChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    fillColor: "rgba(220,220,220,0.5)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    data: [65, 59, 90, 81, 56, 55, 40]
+                },
+                {
+                    fillColor: "rgba(151,187,205,0.5)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    data: [28, 48, 40, 19, 96, 27, 100]
+                }
+            ]
+
+        }
+
+
+    </script><!-- /Calendar -->
+{% endblock %}
