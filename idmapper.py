@@ -42,7 +42,7 @@ def species_identifier():
 
         for x in textsplit:
             org = x.split("_")[1]
-
+            #Checks if it is a plant and if there aint a result for the genename yet.
             if org in species_lines and check == True:
                 print(x)
                 #Defining parameters for the uniprot api
@@ -63,7 +63,7 @@ def species_identifier():
                 if eggnog_id_list:
                     #writes the results to a file, should be replaced by JSON logic
                     feest.write('hier moet pubmed id herrie' + '\t' + i + '\t' + x + '\t' +eggnog_id_list[0] +'\n')
-                    #makes sure only 1 eggnog id is saved per genename. 
+                    #makes sure only 1 eggnog id is saved per genename.
                     check = False
 
 
