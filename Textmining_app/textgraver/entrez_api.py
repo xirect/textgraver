@@ -21,6 +21,8 @@ def pm_ids():
 
     records = list(records)
 
+    print(len(records))
+
     articles = list()
 
 

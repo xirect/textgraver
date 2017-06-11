@@ -21,84 +21,67 @@ def species_identifier(articles_doc):
 
     #Creates a file to save the aquired data, should be replaced by JSON logic
 
+    try:
+        go = True
 
-    #Loops over the list of genes and requests uniprot to translate the genename to uniprot id's
-    for a, article in enumerate(articles_doc):
-        print(a)
-        genes = [x['name'] for x in article['genes']]
-        for n, gene in enumerate(genes):
-            counter = n
-            #Defining parameters for the uniprot api
-            payload = {
-            'from': 'GENENAME',
-            'to': 'ID',
-            'format': 'list',
-            'query': gene
-            }
-            uniprot_id_request = requests.get(uni_url, params= payload)
-            text1 = uniprot_id_request.text
-            textsplit = text1.split()
-            #check is used to check if a result needs to be saved or not.
-            check = True
-            #Loops over the list of uniprot id's and checks if it is in the list of plants
-            #if it is in the list of plants it wil request uniprot to translate the uniprot id to an eggnog id and save this result.
-            #It will only save the first result which is a plant and has a eggnog id.
+        attempt = 0
+        #Loops over the list of genes and requests uniprot to translate the genename to uniprot id's
+        for a, article in enumerate(articles_doc):
+            print(a)
+            genes = [x['name'] for x in article['genes']]
+            for n, gene in enumerate(genes):
+                while go:
+                    counter = n
+                    #Defining parameters for the uniprot api
+                    payload = {
+                    'from': 'GENENAME',
+                    'to': 'ID',
+                    'format': 'list',
+                    'query': gene
+                    }
+                    uniprot_id_request = requests.get(uni_url, params= payload)
+                    text1 = uniprot_id_request.text
+                    textsplit = text1.split()
+                    #check is used to check if a result needs to be saved or not.
 
-            try:
+                    #Loops over the list of uniprot id's and checks if it is in the list of plants
+                    #if it is in the list of plants it wil request uniprot to translate the uniprot id to an eggnog id and save this result.
+                    #It will only save the first result which is a plant and has a eggnog id.
 
-                for x in textsplit:
-                    go = True
-                    attempt = 0
-                    species = x.split("_")[1]
-                    #Checks if it is a plant and if there aint a result for the genename yet.
-                    while go:
-                        if species in species_lines and check == True:
-                            #Defining parameters for the uniprot api
-                            payload_to_eggnog = {
-                            'from': 'ID',
-                            'to': 'EGGNOG_ID',
-                            'format': 'list',
-                            'query': x
-                            }
-                            #Uses the predefined parameters to request uniprot to translate an uniprot id to an eggnog id
-                            eggnog_id_request = requests.get(uni_url, params = payload_to_eggnog)
+                    if textsplit is not None or len(textsplit) != 0:
+                        uniprot_ids = []
+                        for x in textsplit:
+                            species = x.split("_")[1]
+                            #Checks if it is a plant and if there aint a result for the genename yet.
+                            if species in species_lines:
+                                uniprot_ids.append(x)
+                        update_json_record(uniprot_ids, gene, species, article)
 
-                            #Builds a list based on the uniprot api results
-                            eggnog_id_text = eggnog_id_request.text
-                            eggnog_id_list = eggnog_id_text.split()
-
-                            #Checks if the list with eggnog id's isn't empty.
-                            if eggnog_id_list:
-                                #writes the results to a file, should be replaced by JSON logic
-                                eggnog_id = eggnog_id_list[0]
-                                update_json_record(eggnog_id, gene, species, article)
-                                #makes sure only 1 eggnog id is saved per genename.
-                                check = False
-                        go = False
-            except requests.ConnectionError:
-                go = True
-                attempt += 1
-            except requests.ConnectTimeout:
-                go = True
-                attempt += 1
-            except requests.HTTPError:
-                go = True
-                attempt += 1
-            finally:
-                if attempt > 2:
-                    sleep(3)
-                elif attempt > 3:
-                    logfile.write('ERROR for ' + gene + " in: " + article['pmid'] + '\n')
                     go = False
+    except requests.ConnectionError:
+        go = True
+        attempt += 1
+    except requests.ConnectTimeout:
+        go = True
+        attempt += 1
+    except requests.HTTPError:
+        go = True
+        attempt += 1
+    finally:
+        if attempt > 2:
+            sleep(3)
+        elif attempt > 3:
+            logfile.write('ERROR for ' + gene + " in: " + article['pmid'] + '\n')
+            go = False
 
     logfile.close()
     return articles_doc
 
-def update_json_record(eggnog_id, gene, species, article):
+def update_json_record(uniprot_ids, gene, species, article):
 
     binominal = fetch_full_species(species)
 
-    gene_doc = {'name': gene, 'orthologs':{}, 'eggnogid': eggnog_id}
+    gene_doc = {'name': gene, 'orthologs':{}, 'uniprot_ids': uniprot_ids}
     species = article['species']
     all_species = [x['name'] for x in species]
     if binominal in all_species:

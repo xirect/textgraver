@@ -139,7 +139,7 @@ def check_cooccurence(cooccurence_doc, term1, term2, term1_indices, term2_indice
     for cooccurence in cooccurence_doc:
         if cooccurence['source'] == term1 and cooccurence['target'] == term2 or \
            cooccurence['source'] == term2 and cooccurence['target'] == term1:
-            cooccurence['type'] += type
+            cooccurence['type'] = type
             present = True
     if not present:
         cooccurence_doc.append({'source': term1, 'target': term2, 'type': type})

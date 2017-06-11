@@ -3,25 +3,26 @@ import simplejson as json
 import requests
 
 def ncbi_gene(idlist, articles_doc):
-    try:
-        articles_doc = json.loads(articles_doc)
-        articles_doc_update = list()
-        for article in articles_doc:
+
+    articles_doc = json.loads(articles_doc)
+    articles_doc_update = list()
+    for article in articles_doc:
+        try:
             pmid = article['pmid']
             custom_url = "https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/RESTful/tmTool.cgi/bioconcept/{}/JSON".format(pmid)
             r = requests.get(custom_url)
             json_article = r.json()
             article_update = parse_json(json_article, article)
             articles_doc_update.append(article_update)
-    except json.JSONDecodeError:
-        # genes = [[]]
-        # species = [[]]
-        # chemicals = [[]]
-        # ab = ""
-        pass
-    finally:
-        articles_doc_update = json.dumps(articles_doc_update)
-        return articles_doc_update
+        except json.JSONDecodeError:
+            print("HEEELP")
+            # genes = [[]]
+            # species = [[]]
+            # chemicals = [[]]
+            # ab = ""
+
+    articles_doc_update = json.dumps(articles_doc_update)
+    return articles_doc_update
 
 def parse_json(json_article, article):
 

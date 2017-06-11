@@ -12,33 +12,27 @@ import sunflare
 
 
 def main():
-    #print(datetime.time(datetime.now()))
+    print(datetime.time(datetime.now()))
 
-    #idlist, articles_doc = entrez_api.pm_ids()
+    idlist, articles_doc = entrez_api.pm_ids()
 
     print(datetime.time(datetime.now()))
 
-    #articles_doc = ncbi_ccb_api.ncbi_gene(idlist, articles_doc)
+    articles_doc = ncbi_ccb_api.ncbi_gene(idlist, articles_doc)
 
-    #print(datetime.time(datetime.now()))
-
-    articles_doc = pickle.load(open('articles_doc_ncbi_api_1024.p', 'rb'))
-
+    records = json.loads(articles_doc)
 
     articles_doc = regex_genes.get_regex_genes(articles_doc)
 
+    records = json.loads(articles_doc)
+
     articles_doc = id_mapper_eggnog.species_identifier(articles_doc)
 
-    pickle.dump(articles_doc, open('articles_doc_idmapper_1024.p', 'wb'))
-
     print(datetime.time(datetime.now()))
-
 
     articles_doc = orthodb_api.get_orthodb_orthologs(articles_doc)
 
     print(datetime.time(datetime.now()))
-
-    pickle.dump(articles_doc, open('orthodb_articles_doc_1024.p', 'wb'))
 
     articles_doc, cooccurence_doc = search_terms.search_terms(articles_doc)
 
