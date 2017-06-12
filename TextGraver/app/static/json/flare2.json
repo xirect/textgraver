@@ -1,22 +1,3683 @@
 {
- "name": "Hits",
- "description": "All the hits found",
- "children": [
-   {"name":"Stressomstandigheden","description":"All the different stresses", "children":[
-    {"name":"Droogte", "description":"Drought", "children":[
-     {"name":"Arabidopsis thaliana", "description":"ZANDRAKET",  "size":550}
-     ]},
-    {"name":"Zout","description":"SALT", "size":200},
-    {"name":"Licht", "size":200},
-    {"name":"Onbekend", "children":[
-     {"name":"Arabidopsis thaliana","size":40},
-     {"name":"Solanum lycopersicum","size":60}
-
-     ]}
-
-
-  ]
-}
- ]
-
+  "name": "Hits",
+  "children": [
+    {
+      "name": "Stressomstandigheden",
+      "children": [
+        {
+          "name": "drought",
+          "children": [
+            {
+              "name": "mice",
+              "children": [
+                {
+                  "name": "HDL",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "HCD",
+                  "children": [
+                    {
+                      "name": "ONIVA01G35600",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OPUNC01G30220",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OS01G0753100",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OGLUM01G35320",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OB01G40090",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OMERI01G27600",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "OBART01G31120",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "Solyc01g005500.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "PGSC0003DMG400000882",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "ORGLA01G0365500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "Al_scaffold_0002_261",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "AT1G07440",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "BGIOSGA003544",
+                      "description": "Oryza sativa Indica Group"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "LDL",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "GSH",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CAT",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "cyanidin-3-glucoside",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "TAG",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "3-fold",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SOD",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "FRAP",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DPPH",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MDA",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "mM",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "5-fold",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Triticum turgidum var",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "bread wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Zea mays L",
+              "children": [
+                {
+                  "name": "LRs",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "indole-3-acetic",
+                  "children": [
+                    {
+                      "name": "OS11G0528700",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OGLUM11G14980",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA034955",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "ONIVA11G14940",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "ORGLA07G0202500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "OB07G31300",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "PGSC0003DMG403025018",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI07G23000",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "scaffold_801981.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART07G25920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G54510;GH3.6",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OPUNC11G12860",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "Solyc12g005310.1",
+                      "description": "Solanum lycopersicum"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "1-N-naphthylphthalamic",
+                  "children": [
+                    {
+                      "name": "ORGLA08G0235700",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "OGLUM05G26250",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "PGSC0003DMG400017524",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "ABCB7",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OPUNC05G22240",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "Solyc12g098870.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "PGP10",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "BGIOSGA020308",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB05G32140",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OBART05G24720",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "ONIVA05G25860",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OS05G0548500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI05G21250",
+                      "description": "Oryza meridionalis"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "RSA",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ZmPP2AA1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "RNA",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "maize",
+              "children": [
+                {
+                  "name": "LRs",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "indole-3-acetic",
+                  "children": [
+                    {
+                      "name": "OS11G0528700",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OGLUM11G14980",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA034955",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "ONIVA11G14940",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "ORGLA07G0202500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "OB07G31300",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "PGSC0003DMG403025018",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI07G23000",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "scaffold_801981.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART07G25920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G54510;GH3.6",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OPUNC11G12860",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "Solyc12g005310.1",
+                      "description": "Solanum lycopersicum"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "1-N-naphthylphthalamic",
+                  "children": [
+                    {
+                      "name": "ORGLA08G0235700",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "OGLUM05G26250",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "PGSC0003DMG400017524",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "ABCB7",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OPUNC05G22240",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "Solyc12g098870.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "PGP10",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "BGIOSGA020308",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB05G32140",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OBART05G24720",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "ONIVA05G25860",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OS05G0548500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI05G21250",
+                      "description": "Oryza meridionalis"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "RSA",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ZmPP2AA1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "RNA",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Brassica napus L",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "B. napus",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Brassica napus",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "B. napus L",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            }
+          ],
+          "description": "description"
+        },
+        {
+          "name": "osmotic",
+          "children": [
+            {
+              "name": "wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Triticum turgidum var",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "bread wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "rats",
+              "children": [
+                {
+                  "name": "TrkB",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "brain-derived neurotrophic factor",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "FST",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "BDNF",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "K252a",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "quercetin-3-O-b-d-galactosidepyranose",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CMS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CORT",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            }
+          ],
+          "description": "description"
+        },
+        {
+          "name": "salinity",
+          "children": [
+            {
+              "name": "Brassica napus L",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "B. napus",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Brassica napus",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "B. napus L",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            }
+          ],
+          "description": "description"
+        },
+        {
+          "name": "acidity",
+          "children": [],
+          "description": "description"
+        },
+        {
+          "name": "high temperature",
+          "children": [
+            {
+              "name": "wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Triticum turgidum var",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "bread wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Wheat",
+              "children": [
+                {
+                  "name": "SNP",
+                  "children": [
+                    {
+                      "name": "HMGB2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS01G0184900;SSRP1-A",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI01G05800",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "PGSC0003DMG400001413",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "Al_scaffold_0007_498",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA01G0051500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "ONIVA01G06280",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "Solyc01g100620.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OPUNC01G05380",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "BGIOSGA002908",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OB01G15440",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G06010",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OBART01G05540",
+                      "description": "Oryza barthii"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "QTLs",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            }
+          ],
+          "description": "description"
+        },
+        {
+          "name": "low temperature",
+          "children": [
+            {
+              "name": "apple",
+              "children": [
+                {
+                  "name": "MBW",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1-interacting",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SUMO",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB-bHLH-WD40",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CoIP",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdSIZ1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "apples",
+              "children": [
+                {
+                  "name": "MBW",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1-interacting",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SUMO",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB-bHLH-WD40",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CoIP",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdSIZ1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Malus domestica",
+              "children": [
+                {
+                  "name": "MBW",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1-interacting",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SUMO",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB-bHLH-WD40",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CoIP",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdSIZ1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "yeast",
+              "children": [
+                {
+                  "name": "MBW",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1-interacting",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SUMO",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB-bHLH-WD40",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CoIP",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdSIZ1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MdMYB1",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            }
+          ],
+          "description": "description"
+        },
+        {
+          "name": "high light",
+          "children": [],
+          "description": "description"
+        },
+        {
+          "name": "low light",
+          "children": [],
+          "description": "description"
+        },
+        {
+          "name": "oxidative",
+          "children": [
+            {
+              "name": "beet",
+              "children": [
+                {
+                  "name": "MYB",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "WRKY",
+                  "children": [
+                    {
+                      "name": "BGIOSGA024948",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OPUNC07G00750",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "ONIVA12G14120",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "PGSC0003DMG400028381",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OGLUM07G00780",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "scaffold_801332.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART07G00860",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "OB10G12550",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "ORGLA07G0006800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "Solyc12g011200.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "WRKY48",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "OS07G0111400",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OMERI05G22540",
+                      "description": "Oryza meridionalis"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB-bHLH-WD",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MBW",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "McClintock",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "mice",
+              "children": [
+                {
+                  "name": "HDL",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "HCD",
+                  "children": [
+                    {
+                      "name": "ONIVA01G35600",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OPUNC01G30220",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OS01G0753100",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OGLUM01G35320",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "OB01G40090",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OMERI01G27600",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "OBART01G31120",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "Solyc01g005500.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "PGSC0003DMG400000882",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "ORGLA01G0365500",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "Al_scaffold_0002_261",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "AT1G07440",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "BGIOSGA003544",
+                      "description": "Oryza sativa Indica Group"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "LDL",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "GSH",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "CAT",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "cyanidin-3-glucoside",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "TAG",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "3-fold",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SOD",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "FRAP",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DPPH",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MDA",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "mM",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "5-fold",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "rats",
+              "children": [
+                {
+                  "name": "COX2",
+                  "children": [
+                    {
+                      "name": "OPUNC12G12630",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OS04G0343050",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OB0167G10020",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "Solyc12g039010.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "PGSC0003DMG401031302",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "cox2",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "fgenesh1_pg.C_scaffold_8000176",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "ORGLA12G0189400",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "caspase-3",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "Bax",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "Bcl-XL",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "SOD",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ALT",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MDA",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "TNF-aR1",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "30min",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AST",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "iNOS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NF-kB",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Brassica napus L",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "B. napus",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUNC01G01540",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OB0039G10070",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "OGLUM01G01960",
+                      "description": "Oryza glumipatula"
+                    },
+                    {
+                      "name": "BGIOSGA002692",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS01G0127500",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "Al_scaffold_0004_1829",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OMERI01G01260",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc01g008530.2",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "AT1G09480",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA01G0016100",
+                      "description": "Oryza glaberrima"
+                    }
+                  ],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            },
+            {
+              "name": "Brassica napus",
+              "children": [
+                {
+                  "name": "1,1-diphenyl-2-picryl-hydrazyl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "ROS",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "KEY",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR-OX",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "NaCl",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "DFR",
+                  "children": [
+                    {
+                      "name": "ONIVA09G15550",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "scaffold_703782.1",
+                      "description": "Arabidopsis lyrata subsp. lyrata"
+                    },
+                    {
+                      "name": "OBART09G14920",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "AT5G58490",
+                      "description": "Arabidopsis thaliana"
+                    },
+                    {
+                      "name": "ORGLA12G0178800",
+                      "description": "Oryza glaberrima"
+                    },
+                    {
+                      "name": "PGSC0003DMG403018219",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OMERI09G11450",
+                      "description": "Oryza meridionalis"
+                    },
+                    {
+                      "name": "Solyc11g072510.1",
+                      "description": "Solanum lycopersicum"
+                    },
+                    {
+                      "name": "OB09G11730",
+                      "description": "Oryza brachyantha"
+                    },
+                    {
+                      "name": "BGIOSGA038093",
+                      "description": "Oryza sativa Indica Group"
+                    },
+                    {
+                      "name": "OS09G0491852",
+                      "description": "Oryza sativa Japonica Group"
+                    },
+                    {
+                      "name": "OPUNC09G13360",
+                      "description": "Oryza punctata"
+                    },
+                    {
+                      "name": "OGLUM09G15560",
+                      "description": "Oryza glumipatula"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "3,3-diaminobenzidine",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "AtDFR",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "dihydroflavonol-4-reductase",
+                  "children": [
+                    {
+                      "name": "ONIVA01G14060",
+                      "description": "Oryza nivara"
+                    },
+                    {
+                      "name": "OBART01G01780",
+                      "description": "Oryza barthii"
+                    },
+                    {
+                      "name": "PGSC0003DMG400003152",
+                      "description": "Solanum tuberosum"
+                    },
+                    {
+                      "name": "OPUion",
+                      "OPUion": "description"
+                    },
+                    {
+                      "name": "NaCl",
+                      "children": [],
+                      "description": "description"
+                    },
+                    {
+                      "name": "DFR",
+                      "children": [
+                        {
+                          "name": "ONIVA09G15550",
+                          "description": "Oryza nivara"
+                        },
+                        {
+                          "name": "scaffold_703782.1",
+                          "description": "Arabidopsis lyrata subsp. lyrata"
+                        },
+                        {
+                          "name": "OBART09G14920",
+                          "description": "Oryza barthii"
+                        },
+                        {
+                          "name": "AT5G58490",
+                          "description": "Arabidopsis thaliana"
+                        },
+                        {
+                          "name": "ORGLA12G0178800",
+                          "description": "Oryza glaberrima"
+                        },
+                        {
+                          "name": "PGSC0003DMG403018219",
+                          "description": "Solanum tuberosum"
+                        },
+                        {
+                          "name": "OMERI09G11450",
+                          "description": "Oryza meridionalis"
+                        },
+                        {
+                          "name": "Solyc11g072510.1",
+                          "description": "Solanum lycopersicum"
+                        },
+                        {
+                          "name": "OB09G11730",
+                          "description": "Oryza brachyantha"
+                        },
+                        {
+                          "name": "BGIOSGA038093",
+                          "description": "Oryza sativa Indica Group"
+                        },
+                        {
+                          "name": "OS09G0491852",
+                          "description": "Oryza sativa Japonica Group"
+                        },
+                        {
+                          "name": "OPUNC09G13360",
+                          "description": "Oryza punctata"
+                        },
+                        {
+                          "name": "OGLUM09G15560",
+                          "description": "Oryza glumipatula"
+                        }
+                      ],
+                      "description": "description"
+                    },
+                    {
+                      "name": "3,3-diaminobenzidine",
+                      "children": [],
+                      "description": "description"
+                    },
+                    {
+                      "name": "AtDFR",
+                      "children": [],
+                      "description": "description"
+                    },
+                    {
+                      "name": "dihydroflavonol-4-reductase",
+                      "children": [
+                        {
+                          "name": "ONIVA01G14060",
+                          "description": "Oryza nivara"
+                        },
+                        {
+                          "name": "OBART01G01780",
+                          "description": "Oryza barthii"
+                        },
+                        {
+                          "name": "PGSC0003DMG400003152",
+                          "description": "Solanum tuberosum"
+                        },
+                        {
+                          "name": "OPUNC01G01540",
+                          "description": "Oryza punctata"
+                        },
+                        {
+                          "name": "OB0039G10070",
+                          "description": "Oryza brachyantha"
+                        },
+                        {
+                          "name": "OGLUM01G01960",
+                          "description": "Oryza glumipatula"
+                        },
+                        {
+                          "name": "BGIOSGA002692",
+                          "description": "Oryza sativa Indica Group"
+                        },
+                        {
+                          "name": "OS01G0127500",
+                          "description": "Oryza sativa Japonica Group"
+                        },
+                        {
+                          "name": "Al_scaffold_0004_1829",
+                          "description": "Arabidopsis lyrata subsp. lyrata"
+                        },
+                        {
+                          "name": "OMERI01G01260",
+                          "description": "Oryza meridionalis"
+                        },
+                        {
+                          "name": "Solyc01g008530.2",
+                          "description": "Solanum lycopersicum"
+                        },
+                        {
+                          "name": "AT1G09480",
+                          "description": "Arabidopsis thaliana"
+                        },
+                        {
+                          "name": "ORGLA01G0016100",
+                          "description": "Oryza glaberrima"
+                        }
+                      ],
+                      "description": "Oryza meridionalis"
+                    }
+                  ],
+                  "description": "description"
+                },
+                {
+                  "name": "MYB-bHLH-WD",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "MBW",
+                  "children": [],
+                  "description": "description"
+                },
+                {
+                  "name": "McClintock",
+                  "children": [],
+                  "description": "description"
+                }
+              ],
+              "description": "description"
+            }
+          ],
+          "description": "description"
+        }
+      ],
+      "description": "All the different stresses"
+    }
+  ],
+  "description": "All the hits found"
 }
