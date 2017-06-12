@@ -9,6 +9,7 @@ def ncbi_gene(idlist, articles_doc):
 
     articles_doc = json.loads(articles_doc)
     articles_doc_update = list()
+
     for article in articles_doc:
         attempts = 0
         go = True
@@ -27,12 +28,6 @@ def ncbi_gene(idlist, articles_doc):
                 articles_doc_update.append(article_update)
                 go = False
             except json.JSONDecodeError:
-                if get_method:
-                    method = 'post'
-                    go = True
-                    get_method = False
-                else:
-                    print('Post method failed')
                     go = False
             except requests.ConnectTimeout:
                 attempts += 1

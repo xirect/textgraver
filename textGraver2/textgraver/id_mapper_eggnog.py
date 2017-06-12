@@ -22,14 +22,12 @@ def species_identifier(articles_doc):
     #Creates a file to save the aquired data, should be replaced by JSON logic
 
 
-
-
-    attempt = 0
     #Loops over the list of genes and requests uniprot to translate the genename to uniprot id's
     for a, article in enumerate(articles_doc):
-        #print(a)
+        print(a)
         genes = [x['name'] for x in article['genes']]
         for n, gene in enumerate(genes):
+            attempt = 0
             go = True
             while go:
                 try:
@@ -72,7 +70,7 @@ def species_identifier(articles_doc):
                 finally:
                     if attempt > 2:
                         sleep(3)
-                    elif attempt > 3:
+                    if attempt > 3:
                         logfile.write('ERROR for ' + gene + " in: " + article['pmid'] + '\n')
                         go = False
     logfile.close()
@@ -104,8 +102,8 @@ def fetch_full_species(species):
     for line in spec_file:
         if species and "N=" in line:
             binominal = line.split("N=")[1].strip()
-    if binominal is None:
-        binominal = species
+        else:
+            binominal = species
 
     return binominal
 

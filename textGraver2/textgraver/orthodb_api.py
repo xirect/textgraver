@@ -13,7 +13,8 @@ url_ortho = "http://www.orthodb.org/tab?id={}&species="
 
 def get_orthodb_orthologs(articles_doc):
 
-    for article in articles_doc:
+    for a, article in enumerate(articles_doc):
+        print(a)
         pmid = article['pmid']
         species_doc = article['species']
         species = [x['name'] for x in species_doc]
@@ -56,7 +57,7 @@ def get_hit_list(url, query, pmid):
         finally:
             if attempt > 2:
                 sleep(3)
-            elif attempt > 3:
+            if attempt > 3:
                 logfile.write('Connection ERROR getting hitlist for ' + query + " in: " + pmid + '\n')
                 go = False
 
@@ -64,28 +65,14 @@ def get_hit_list(url, query, pmid):
 def get_orthologes(query, pmid, url, gene):
     go = True
     attempts = 0
-
     while go:
         try:
-            go = False
             r = requests.get(url.format(gene))
-            tries = 0
-            while r.status_code != 200:
-                r = requests.get(url.format(gene))
-                tries += 1
-                if r.status_code in [400,404,410]:
-                    break
-                elif tries > 2:
-                    break
-                if r.status_code == 200:
-                    content = r.text
-                    orthologs = content.split("\n")
-                    nr_orhtologs = len(orthologs)-1
-                    wanted_list = get_wanted_orgs(query, orthologs)
-                    return wanted_list
-                else:
-                    logfile.write("OrthoDB API returned ERRORcode for " + query + "\n")
-                go = False
+            content = r.text
+            orthologs = content.split("\n")
+            wanted_list = get_wanted_orgs(query, orthologs)
+            go = False
+
         except requests.ConnectTimeout:
             attempts += 1
         except requests.ConnectionError:
@@ -95,10 +82,10 @@ def get_orthologes(query, pmid, url, gene):
         finally:
             if attempts > 2:
                 sleep(3)
-            elif attempts > 3:
+            if attempts > 3:
                 logfile.write('Connection ERROR getting orthologs for ' + gene + " in: " + pmid + '\n')
                 go = False
-
+    return wanted_list
 
 
 def get_wanted_orgs(query, orthologs):
