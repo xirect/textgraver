@@ -1,9 +1,9 @@
 {% extends "layout_user.html" %}
-{% block title %}Sunburst{% endblock %}
+{% block title %}Orthologs{% endblock %}
 {% block content %}
 <div class="widget widget-nopad">
 	<div class="widget-header"> <i class="icon-list-alt"></i>
-		<h3> Today's Stats</h3>
+		<h3> Orthologs</h3>
 	</div>
 	<!-- /widget-header -->
 	<div class="widget-content">
@@ -11,6 +11,13 @@
 			<div class="widget-content">
 				<h6 class="bigstats">Applicatie die genen en anthocyanen met stressomstandigheden koppeld.</h6>
 				<div id="big_stats" class="cf">
+					<div>
+						<form>
+							<input type="text" name="keyword"></input>
+							<input type="submit" name="submit" value="Search"></input>
+						</form>
+					</div>
+
 					<iframe src="http://eggnogapi.embl.de/nog_data/html/tree/ENOG410ZSWV"width="1280" height="1000"></iframe>
 
 

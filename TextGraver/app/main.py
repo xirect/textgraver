@@ -55,7 +55,6 @@ def sunburst():
 @app.route("/graph")
 def graph():
     jsonf = open("/Users/Xirect/Desktop/Github/TextGraver/app/static/json/graph.json", mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True)
-    #jsonf = json.load(jsonfile)
     return render_template('graph.html', jsonf=jsonf)
 
 @app.route("/sunburstt")
@@ -74,13 +73,11 @@ def flowchart():
 def api():
     return render_template('api.html')
 
-@app.route("/phylo")
-def phylo():
-    return render_template('phylo.html')
 
 @app.route("/term")
 def term():
     trail = request.args.get('search')
+
     return render_template('linking.html', term=trail)
 
 
