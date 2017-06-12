@@ -19,10 +19,11 @@ def reports():
     return render_template('reports.html', trail=trail)
 
 
+
 @app.route("/charts", methods=["POST", "GET"])
 def charts():
     trail = request.args.get('keyword')
-    return render_template('charts.html')
+    return render_template('charts.html', trail=trail)
 
 
 @app.route("/sunburst")

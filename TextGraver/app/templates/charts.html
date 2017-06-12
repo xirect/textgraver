@@ -18,11 +18,12 @@
           <input type="text" name="keyword"></input>
           <input type="submit" name="submit" value="Search"></input>
         </form>
+				{% if term %}
+				{{ term }}
+				{% endif %}
       </div>
 
-		{% if term %}
-		{{ term }}
-		{% endif %}
+
 
 	</div>
 </div>
