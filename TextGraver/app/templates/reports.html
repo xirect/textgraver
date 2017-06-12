@@ -11,13 +11,16 @@
 			<div class="widget-content">
 				<h6 class="bigstats">Applicatie die genen en anthocyanen met stressomstandigheden koppeld.</h6>
 				<div id="big_stats" class="cf">
-					<div>
-						<form>
+					<div STYLE="padding: 20px;">
+						<form action="/reports" method="GET">
 							<input type="text" name="keyword"></input>
 							<input type="submit" name="submit" value="Search"></input>
 						</form>
 					</div>
 
+					{% if trail %}
+					{{ trail }}
+					{% endif %}
 					<iframe src="http://eggnogapi.embl.de/nog_data/html/tree/ENOG410ZSWV"width="1280" height="1000"></iframe>
 
 

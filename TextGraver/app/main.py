@@ -12,41 +12,18 @@ def index():
 def dashboard():
     return render_template('dashboard.html')
 
-@app.route("/reports")
+
+@app.route("/reports", methods=["POST", "GET"])
 def reports():
-    return render_template('reports.html')
+    trail = request.args.get("keyword")
+    return render_template('reports.html', trail=trail)
 
-@app.route("/guidely")
-def guidely():
-    return render_template('guidely.html')
 
-@app.route("/charts")
+@app.route("/charts", methods=["POST", "GET"])
 def charts():
+    trail = request.args.get('keyword')
     return render_template('charts.html')
 
-@app.route("/shortcodes")
-def shortcodes():
-    return render_template('shortcodes.html')
-
-@app.route("/icons")
-def icons():
-    return render_template('icons.html')
-
-@app.route("/faq")
-def faq():
-    return render_template('faq.html')
-
-@app.route("/pricing")
-def pricing():
-    return render_template('pricing.html')
-
-@app.route("/login")
-def login():
-    return render_template('login.html')
-
-@app.route("/signup")
-def signup():
-    return render_template('signup.html')
 
 @app.route("/sunburst")
 def sunburst():
@@ -54,12 +31,8 @@ def sunburst():
 
 @app.route("/graph")
 def graph():
-    jsonf = open("/Users/Xirect/Desktop/Github/TextGraver/app/static/json/graph.json", mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True)
-    return render_template('graph.html', jsonf=jsonf)
+    return render_template('graph.html')
 
-@app.route("/sunburstt")
-def sunburstt():
-    return render_template('sunburstt.html')
 
 @app.route("/error")
 def error():

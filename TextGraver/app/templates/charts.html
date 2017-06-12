@@ -14,13 +14,18 @@
 			</div>
 			<!-- /widget-content -->
       <div STYLE="padding: 20px;">
-      <form action="/charts" method="POST">
-        <input type="search" name="name">
-        <input type="submit" name="send" value="Send">
+        <form action="/charts" method="GET">
+          <input type="text" name="keyword"></input>
+          <input type="submit" name="submit" value="Search"></input>
+        </form>
       </div>
-    </form>
-		</div>
+
+		{% if term %}
+		{{ term }}
+		{% endif %}
+
 	</div>
+</div>
 </div>
 
 

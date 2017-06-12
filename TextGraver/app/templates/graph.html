@@ -10635,8 +10635,7 @@ text {
 	  .enter().append("circle")
 	    .attr("r", 10)
 			.on("click", function(d){
-				console.log(d.pmid);
-				window.location.href = "term?search="+d.name;
+				window.location.href = "charts?keyword="+d.name;
 
 			})
 	    .call(force.drag);
