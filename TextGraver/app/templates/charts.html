@@ -1,5 +1,5 @@
 {% extends "layout_user.html" %}
-{% block title %}Sunburst{% endblock %}
+{% block title %}Table{% endblock %}
 {% block content %}
 <div class="widget widget-nopad">
 	<div class="widget-header"> <i class="icon-list-alt"></i>
@@ -9,10 +9,16 @@
 	<div class="widget-content">
 		<div class="widget big-stats-container">
 			<div class="widget-content"> <!-- width="500" height="400" -->
-				<h6 class="bigstats"> Table </h6>
+				<h6 class="bigstats"> Table to find the orthologe, based on the keyword that is typed in the search bar. </h6>
 				<div id="big_stats" class="cf">
 			</div>
 			<!-- /widget-content -->
+      <div STYLE="padding: 20px;">
+      <form action="/charts" method="POST">
+        <input type="search" name="name">
+        <input type="submit" name="send" value="Send">
+      </div>
+    </form>
 		</div>
 	</div>
 </div>
