@@ -2,7 +2,9 @@
   {
     "source": "pap1",
     "type": "green",
-    "target": "anthocyanin"
+    "target": "anthocyanin",
+    "pmid":"pm1231"
+
   },
   {
     "source": "pap1",

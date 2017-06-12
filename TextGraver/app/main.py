@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, send_from_directory, flash, request, redirect, url_for, g, Response
 from app import app
+import simplejson as json
 
 @app.route("/")
 def index():
@@ -53,7 +54,9 @@ def sunburst():
 
 @app.route("/graph")
 def graph():
-    return render_template('graph.html')
+    jsonf = open("/Users/Xirect/Desktop/Github/TextGraver/app/static/json/graph.json", mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True)
+    #jsonf = json.load(jsonfile)
+    return render_template('graph.html', jsonf=jsonf)
 
 @app.route("/sunburstt")
 def sunburstt():
@@ -74,6 +77,11 @@ def api():
 @app.route("/phylo")
 def phylo():
     return render_template('phylo.html')
+
+@app.route("/term")
+def term():
+    trail = request.args.get('search')
+    return render_template('linking.html', term=trail)
 
 
 @app.errorhandler(404)

@@ -3634,11 +3634,13 @@
                         },
                         {
                           "name": "OMERI01G01260",
-                          "description": "Oryza meridionalis"
+                          "description": "Oryza meridionalis",
+                          "size": 500
                         },
                         {
                           "name": "Solyc01g008530.2",
-                          "description": "Solanum lycopersicum"
+                          "description": "Solanum lycopersicum",
+                          "size":40
                         },
                         {
                           "name": "AT1G09480",
@@ -3657,7 +3659,9 @@
                 {
                   "name": "MYB-bHLH-WD",
                   "children": [],
-                  "description": "description"
+                  "description": "description",
+                  "size":500
+
                 },
                 {
                   "name": "MBW",
@@ -3676,7 +3680,9 @@
           "description": "description"
         }
       ],
-      "description": "All the different stresses"
+      "description": "All the different stresses",
+      "size":500
+
     }
   ],
   "description": "All the hits found"

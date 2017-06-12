@@ -36,17 +36,17 @@
 
 .link.red{
 	stroke: red;
-	stroke-width: 0.2;
+	stroke-width: 1;
 }
 
 .link.blue{
 	stroke: blue;
-	stroke-width: 0.2;
+	stroke-width: 1;
 }
 
 .link.purple{
 	stroke: purple;
-	stroke-width: 0.2;
+	stroke-width: 2;
 }
 
 .link.gray{
@@ -65,6 +65,10 @@ text {
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
 }
 </style>
+<hide style="display: none;">
+<p id="jsonf">{{ jsonf }}</p>
+</hide>
+
 <div class="widget widget-nopad">
 	<div class="widget-header"> <i class="icon-list-alt"></i>
 		<h3> Today's Stats</h3>
@@ -98,6 +102,8 @@ text {
 
 	<script src="//d3js.org/d3.v3.min.js"></script>
 	<script>
+
+
 
 	var links = [
 	  {
@@ -10573,7 +10579,8 @@ text {
 	  {
 	    "source": "oxidative",
 	    "type": "green",
-	    "target": "in vitro"
+	    "target": "in vitro",
+
 	  }
 	]
 
@@ -10594,7 +10601,7 @@ text {
 				.links(links)
 				.size([width, height])
 				.linkDistance(200)
-				.charge(-500) // Reppelling factor
+				.charge(-300) // Reppelling factor
 				.on("tick", tick)
 				.start();
 
@@ -10626,7 +10633,12 @@ text {
 	var circle = svg.append("g").selectAll("circle")
 	    .data(force.nodes())
 	  .enter().append("circle")
-	    .attr("r", 3)
+	    .attr("r", 10)
+			.on("click", function(d){
+				console.log(d.pmid);
+				window.location.href = "term?search="+d.name;
+
+			})
 	    .call(force.drag);
 
 	var text = svg.append("g").selectAll("text")
