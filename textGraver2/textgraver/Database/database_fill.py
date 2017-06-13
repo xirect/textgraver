@@ -16,14 +16,14 @@ def fill_database():
 
     graaf_doc = open("../cooccurence_doc10.json")
     graaf_doc_buffer = articles_doc.read()
-    graaf_doc_json = json.loads(articles_doc_buffer)
+    graaf_doc_json = json.loads(graaf_doc_buffer)
 
     collection_graaf = db.graaf
     db.collection_graaf.delete_many({})
 
     sunburst_doc = open("../sunburst_doc10.json")
     sunburst_doc_buffer = articles_doc.read()
-    sunburst_doc_json = json.loads(articles_doc_buffer)
+    sunburst_doc_json = json.loads(sunburst_doc_buffer)
 
     collection_sunburst = db.sunburst
     db.collection_sunburst.delete_many({})
