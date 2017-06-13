@@ -9,9 +9,12 @@
 	<div class="widget-content">
 		<div class="widget big-stats-container">
 			<div class="widget-content">
-				<h6 class="bigstats">Applicatie die genen en anthocyanen met stressomstandigheden koppeld.</h6>
+				<h6 class="bigstats">Clickable sunburst, traverse through layers to find out more about certain stress factors.</h6>
 				<div id="big_stats" class="cf">
 					<sunburst>
+						<div STYLE="padding: 20px;">
+						<h1><font color="#00ba8b">Sunburst,</font></h1><h2>Clickable and traversable.</h2>
+					</div>
 					</sunburst>
 
 
@@ -29,7 +32,7 @@
 	<script src="//d3js.org/d3.v3.min.js"></script>
 	<script>
 
-  hallo = function(){
+  RunScript = function(){
 		var margin = {top: 350, right: 480, bottom: 350, left: 480},
 		    radius = Math.min(margin.top, margin.right, margin.bottom, margin.left) - 10;
 
@@ -103,7 +106,7 @@
 		}
 
 		var root_ = null;
-		d3.json("../static/json/flare2.json", function(error, root) {
+		d3.json("../static/json/flare.json", function(error, root) {
 		  if (error) return console.warn(error);
 		  // Compute the initial layout on the entire tree to sum sizes.
 		  // Also compute the full name and fill color for each node,
@@ -274,7 +277,7 @@
 		d3.select(self.frameElement).style("height", margin.top + margin.bottom + "px");
 
 	}
-	hallo();
+	RunScript();
 	</script>
 
 </div>
