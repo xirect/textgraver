@@ -2203,6 +2203,7 @@ a.list-group-item.active .list-group-item-text {
   margin: 15px -15px -15px;
   background-color: #f5f5f5;
   border-top: 1px solid #dddddd;
+  align-items: baseline;
 }
 
 .panel-primary {

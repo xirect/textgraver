@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, send_from_directory, flash, request, redirect, url_for, g, Response
 from app import app
+import simplejson as json
 
 @app.route("/")
 def index():
@@ -11,41 +12,20 @@ def index():
 def dashboard():
     return render_template('dashboard.html')
 
-@app.route("/reports")
+
+@app.route("/reports", methods=["POST", "GET"])
 def reports():
-    return render_template('reports.html')
+    trail = request.args.get("keyword")
+    trail = "http://eggnogapi.embl.de/nog_data/html/tree/"+trail
+    return render_template('reports.html', trail=trail)
 
-@app.route("/guidely")
-def guidely():
-    return render_template('guidely.html')
 
-@app.route("/charts")
+
+@app.route("/charts", methods=["POST", "GET"])
 def charts():
-    return render_template('charts.html')
+    trail = request.args.get('keyword')
+    return render_template('charts.html', trail=trail)
 
-@app.route("/shortcodes")
-def shortcodes():
-    return render_template('shortcodes.html')
-
-@app.route("/icons")
-def icons():
-    return render_template('icons.html')
-
-@app.route("/faq")
-def faq():
-    return render_template('faq.html')
-
-@app.route("/pricing")
-def pricing():
-    return render_template('pricing.html')
-
-@app.route("/login")
-def login():
-    return render_template('login.html')
-
-@app.route("/signup")
-def signup():
-    return render_template('signup.html')
 
 @app.route("/sunburst")
 def sunburst():
@@ -53,11 +33,9 @@ def sunburst():
 
 @app.route("/graph")
 def graph():
+
     return render_template('graph.html')
 
-@app.route("/sunburstt")
-def sunburstt():
-    return render_template('sunburstt.html')
 
 @app.route("/error")
 def error():
@@ -71,9 +49,38 @@ def flowchart():
 def api():
     return render_template('api.html')
 
-@app.route("/phylo")
-def phylo():
-    return render_template('phylo.html')
+
+@app.route("/term")
+def term():
+    trail = request.args.get('search')
+
+    return render_template('linking.html', term=trail)
+
+
+@app.route("/graph_green")
+def graph_green():
+    return render_template('graph_green.html')
+
+@app.route("/graph_red")
+def graph_red():
+    return render_template('graph_red.html')
+
+@app.route("/graph_blue")
+def graph_blue():
+    return render_template('graph_blue.html')
+
+@app.route("/graph_gray")
+def graph_gray():
+    return render_template('graph_gray.html')
+
+@app.route("/graph_purple")
+def graph_purple():
+    return render_template('graph_purple.html')
+
+@app.route("/graph_lowtemperature")
+def graph_lowtemperature():
+    return render_template('graph_lowtemperature.html')
+
 
 
 @app.errorhandler(404)
