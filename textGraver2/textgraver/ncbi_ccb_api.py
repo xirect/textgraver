@@ -10,7 +10,8 @@ def ncbi_gene(idlist, articles_doc):
     articles_doc = json.loads(articles_doc)
     articles_doc_update = list()
 
-    for article in articles_doc:
+    for a, article in enumerate(articles_doc):
+        print(a)
         attempts = 0
         go = True
         method = 'get'
@@ -38,7 +39,7 @@ def ncbi_gene(idlist, articles_doc):
             finally:
                 if attempts > 2:
                     sleep(3)
-                elif attempts > 3:
+                if attempts > 3:
                     logfile.write('Connection ERROR getting orthologs for ' + '\n')
                     go = False
 
