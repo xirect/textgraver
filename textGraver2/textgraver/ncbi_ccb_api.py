@@ -1,7 +1,9 @@
-#make request to NCBI for the gene, chemical and organism indices for the corresponding PMED ID
+#Functions for making request to NCBI CBB for the gene, chemical and organism indices for the corresponding PMID
+#NCBI CBB consists of textmining web services for annotating pubmed articles, these services are machine learning programs
+#for identifying chemicals(tmChem), species(SR4GN), disease(DNorm), mutation(tmVar) and genes/proteins(GNormplus)
+#a GET request retrieves preannoted data from the database, a POST request executes a new analysis of text
 import simplejson as json
 import requests
-from datetime import datetime
 from time import sleep
 
 logfile = open('logile_ncbi_api', 'a')
@@ -11,17 +13,20 @@ def ncbi_gene(idlist, articles_doc):
     articles_doc_update = list()
 
     for a, article in enumerate(articles_doc):
+        #print counter for every article in the loop
         print(a)
         attempts = 0
         go = True
         method = 'get'
-        get_method = True
+        #while no exception occured or while there were more than 3 attemps to fetch the data from NCBI
         while go:
             try:
                 pmid = article['pmid']
+                #request for preannoted data on the pubmed CBB database for a certain article (pubmed id)
                 custom_url = "https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/RESTful/tmTool.cgi/bioconcept/{}/JSON".format(pmid)
                 if method == 'get':
                     r = requests.get(custom_url)
+                #not functional: do a POST request when preannotad data is not present on the server
                 else:
                     r = requests.post(custom_url)
                 json_article = r.json()
@@ -47,7 +52,7 @@ def ncbi_gene(idlist, articles_doc):
     articles_doc_update = json.dumps(articles_doc_update)
     return articles_doc_update
 
-
+#Function for parsing json format response from NCBI CBB
 def parse_json(json_article, article):
 
     genes = []
@@ -55,13 +60,14 @@ def parse_json(json_article, article):
     abstract = ""
 
     abstract = json_article['text']
-
+    #parse embedded denotation for indices of genes and chemicals, indices are from abstract where the annotations originate from
     for denot in json_article['denotations']:
         if denot['obj'].split(":")[0] == 'Gene':
             genes.append([denot['span']['begin'],denot['span']['end']])
         if denot['obj'].split(":")[0] == "Chemical":
             chemicals.append([denot['span']['begin'],denot['span']['end']])
 
+    #if genes or chemicals not present, return empty list
     if len(genes) == 0:
         genes.append([])
     if len(chemicals) == 0:
@@ -73,12 +79,13 @@ def parse_json(json_article, article):
 
     return article_update
 
-
+#Function to pull info (genes and chemicals) out of abstract with indices from the json format
 def pull_info_abstract(indices, abstract, article):
 
     genes = indices[0]
     chemicals = indices[1]
 
+    #for every gene indices, get gene from abstract and append to full info json document
     genes_doc = []
     for gene in genes:
         if len(gene) != 0:
@@ -89,13 +96,14 @@ def pull_info_abstract(indices, abstract, article):
             gene_doc['orthologs'] = []
             gene_doc['eggnog'] = ''
             genes_doc.append(gene_doc)
+    # for every chemical indices, get chemical from abstract and append to full info json document
     chemicals_doc = []
     for chemical in chemicals:
         if len(chemical) != 0:
             start = chemical[0]
             end = chemical[1]
             chemicals_doc.append(abstract[start:end])
-
+    #update full info json doc with abstract, genes and chemicals
     article['abstract'] = abstract
     article['genes'] = genes_doc
     article['chemicals'] = chemicals_doc

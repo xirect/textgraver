@@ -1,3 +1,10 @@
+#Application for textmining of Pubmed articles with the search terms 'anthocyanin' and 'stress' to find relations
+#between these two variables in plants, the application retrieves genes, chemicals and organims from the abstracts
+#and retrieves additional information such as orthologs from the genes.
+#Information is pushed to a MongoDB, a webapplication visualises the data in a sunburst and a cooccurence graph
+#TextGraver version 1.00
+#Date: 13/06/2017
+#Authors: Jeffrey Hiraki, Jasper de Meijer, Heleen Severin, Sanne Geraerts
 import simplejson as json
 from datetime import datetime
 import pickle

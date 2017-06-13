@@ -76,6 +76,7 @@ def species_identifier(articles_doc):
     logfile.close()
     return articles_doc
 
+#Function for updating the json record with the full information from the articles
 def update_json_record(uniprot_ids, gene, species, article):
 
     binominal = fetch_full_species(species)
@@ -83,6 +84,7 @@ def update_json_record(uniprot_ids, gene, species, article):
     gene_doc = {'name': gene, 'orthologs':{}, 'uniprot_ids': uniprot_ids}
     species = article['species']
     all_species = [x['name'] for x in species]
+    # Checks if the species name is already present in the json record for a certain article
     if binominal in all_species:
         for n, spec in enumerate(species):
             if species[n]['name'] == binominal:
@@ -96,9 +98,10 @@ def update_json_record(uniprot_ids, gene, species, article):
         genes.append(gene_doc)
 
 
-
+#Function for retrieving the full (binominal) name for a Uniprot mnemonic by scanning speclist.txt
 def fetch_full_species(species):
 
+    #binominal name is in the same line as mnemonic
     for line in spec_file:
         if species and "N=" in line:
             binominal = line.split("N=")[1].strip()
@@ -106,12 +109,3 @@ def fetch_full_species(species):
             binominal = species
 
     return binominal
-
-def fetch_tree_html(eggnog_id):
-
-    r = requests.get(eggnog_url.format_map(eggnog_id))
-    html = r.content
-
-    file = open('treehtml.html', 'w')
-    file.write(str(html))
-    file.close()

@@ -1,12 +1,12 @@
+#Funtions for constructing a sunburst json file from all the gathered information from the pubmed abstracts
 import simplejson as json
 
+#all the distinct stress terms that were searched in the abstracts
 stress_terms = ["drought", "osmotic", "salinity", "acidity", "high temperature", "low temperature", "high light", "low light", "oxidative", "ultraviolet"]
 
 def construct_sunflares(articles_doc):
 
-    #articles_doc = json.loads(articles_doc)
     stress_sunflare = construct_stress_sunflare(articles_doc)
-    #species_sunflare = construct_species_sunflare(articles_doc)
 
     stress_sunflare = json.dumps(stress_sunflare)
 
@@ -14,14 +14,16 @@ def construct_sunflares(articles_doc):
 
 
 def construct_stress_sunflare(articles_doc):
+    #initial setup for sunburst with the first two layers
     sunflare = {"name": "Hits",
                 "description": "All the hits found",
                 "children": [{"name": "Stressomstandigheden", "description": "All the different stresses",
                               "children": []}]}
-
+    #make the json loadable
     sunflare = json.loads(json.dumps(sunflare))
     articles_doc = json.loads(articles_doc)
 
+    #third layer of sunburst with all the disctinct stresses
     all_stresses = []
     for stress in stress_terms:
         stress_doc = {}
@@ -31,6 +33,9 @@ def construct_stress_sunflare(articles_doc):
         all_stresses.append(stress_doc)
     sunflare['children'][0]['children'] = all_stresses
 
+    #algorithm for cunstructing sunburst from all info json doc
+    #every layer consist of children, the last third layers consist of a name, description (mouse over to view description)
+    #size (size of box in sunburst) and children (the embedded layer)
     stresses_sunflare = sunflare['children'][0]['children']
     for n, stress in enumerate(stresses_sunflare):
         name = stress['name']
@@ -87,8 +92,3 @@ def construct_stress_sunflare(articles_doc):
     sunflare = json.loads(json.dumps(sunflare))
 
     return sunflare
-
-def construct_species_sunflare(articles_doc):
-    species_sunflare = {}
-
-    return species_sunflare
